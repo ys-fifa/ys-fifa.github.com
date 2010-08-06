@@ -1,9 +1,9 @@
 ---
 layout: post
-title: day-to-day account
+title: 球队资金流水
 ---
 
-h1. 球队资金流水
+h1. {{page.title }}
 
 h3. 当前队费情况: -330元
 

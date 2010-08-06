@@ -1,4 +1,2 @@
 markdown: rdiscount
-#markdown: maruku
 pygments: true
-lsi: false
