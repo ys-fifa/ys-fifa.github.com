@@ -1,0 +1,36 @@
+1. Copy and paste the following embed code anywhere into your page.
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /**
+    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+    */
+  (function() {
+   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+   dsq.src = 'http://wengychgithub.disqus.com/embed.js';
+   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=wengychgithub">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+2.Copy the following comment count code and paste it right before the closing </body> tag.  
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+	var links = document.getElementsByTagName('a');
+	var query = '?';
+	for(var i = 0; i < links.length; i++) {
+	if(links[i].href.indexOf('#disqus_thread') >= 0) {
+		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+	}
+	}
+	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/wengychgithub/get_num_replies.js' + query + '"></' + 'script>');
+})();
+//]]>
+</script>
+
+3. Append #disqus_thread to the end of permalinks. The comment count code will replace the text of these links with the comment count. 
+For example, you may have a link with this HTML: 
+<a href="http://example.com/my_article.html#disqus_thread">Comments</a> The comment count code will replace the text "Comments" with the number of comments on the page http://example.com/my_article.html 
+

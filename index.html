@@ -1,0 +1,14 @@
+---
+layout: default
+title: 汇鑫银通足球队
+---
+
+<div id="home">
+  <h1>My Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><h1><span>{{ post.date | date_to_string }} </span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></h1></li>
+      {{ post.content }}
+    {% endfor %}
+  </ul>
+</div>
