@@ -50,9 +50,8 @@ table {
   font-size: inherit;
   font: 100%;
   
-  border-collapse:collapse; /* 关键属性：合并表格内外边框(其实表格边框有2px，外面1px，里面还有1px哦) */
-  border:solid #999; /* 设置边框属性；样式(solid=实线)、颜色(#999=灰) */
-  border-width:1px 0 0 1px; /* 设置边框状粗细：上 右 下 左 = 对应：1px 0 0 1px */
+  border:teal 4 double
+  border:teal 1 solid 
 }
 
 /*****************************************************************************/
